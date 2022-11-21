@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaInicio"
+    android:background="@color/md_deep_purple_400">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/md_deep_purple_100"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Nombre"
+            android:textColor="@color/md_deep_purple_300"
+            android:textSize="31dp" />
+
+        <TextView
+            android:id="@+id/distancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Distancia"
+            android:textColor="@color/md_deep_purple_300"
+            android:textSize="31dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagenUsuario"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/idUsuario"
+            android:src="@drawable/imagen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonCheck"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/round_button2"
+                android:src="@drawable/check"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/buttonNo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/round_button3"
+                android:src="@drawable/cancel"
+                android:text="Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:background="@color/md_deep_purple_400"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/message" />
+
+            <ImageButton
+                android:id="@+id/buttonLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/md_deep_purple_400"
+                android:src="@drawable/location"
+                android:text="Button" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

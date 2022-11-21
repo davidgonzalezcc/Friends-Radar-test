@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaRegistrarse">
+
+    <ScrollView
+        android:id="@+id/scrollCrear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="42dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <EditText
+                android:id="@+id/nomCrear"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/label_redondo"
+                android:ems="10"
+                android:hint="Ej. David"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/md_deep_purple_800"
+                android:textColorHint="@color/md_deep_purple_100"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Apellido"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <EditText
+                android:id="@+id/crearApellido"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/label_redondo"
+                android:ems="10"
+                android:hint="Ej. Pérez"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/md_deep_purple_800"
+                android:textColorHint="@color/md_deep_purple_100"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <EditText
+                android:id="@+id/crearEmail"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/label_redondo"
+                android:ems="10"
+                android:hint="Ej. ejemplo@gmail.com"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@color/md_deep_purple_800"
+                android:textColorHint="@color/md_deep_purple_100"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Contraseña"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <EditText
+                android:id="@+id/crearContrase"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/label_redondo"
+                android:ems="10"
+                android:hint="************"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/md_deep_purple_800"
+                android:textColorHint="@color/md_deep_purple_100"
+                android:textSize="20dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Carrera"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <EditText
+                android:id="@+id/crearCarrera"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:background="@drawable/label_redondo"
+                android:ems="10"
+                android:hint="Carrera"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/md_deep_purple_800"
+                android:textColorHint="@color/md_deep_purple_100"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Semestre"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+            
+            <Spinner
+                android:id="@+id/spSemestre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/md_deep_purple_300"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Signo zodiacal"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <Spinner
+                android:id="@+id/spSigno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Imagen"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <Button
+                android:id="@+id/buttonAbrirImagen"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="55dp"
+                android:onClick="abrirImagen"
+                android:text="Abrir Galería"
+                android:textColor="@color/md_deep_purple_800"
+                app:backgroundTint="@color/md_deep_purple_50"
+                app:cornerRadius="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:text="Ubicación"
+                android:textColor="@color/md_deep_purple_300"
+                android:textSize="31dp" />
+
+            <Button
+                android:id="@+id/buttonObtenerUbi"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="55dp"
+                android:onClick="obetenerUbi"
+                android:text="Obtener ubicación"
+                android:textColor="@color/md_deep_purple_800"
+                app:backgroundTint="@color/md_deep_purple_50"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:onClick="crearUsuario"
+                android:text="Registrarse"
+                android:textColor="@color/md_deep_purple_50"
+                android:textSize="15dp"
+                app:backgroundTint="@color/md_deep_purple_800"
+                app:cornerRadius="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
