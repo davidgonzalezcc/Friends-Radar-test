@@ -68,5 +68,9 @@ public class pantallaMapa extends AppCompatActivity implements OnMapReadyCallbac
 
         return Math.round(res * 100.0) / 100.0;
     }
+
+    private void marcadoresAmigos(){
+
+    }
 }
 
